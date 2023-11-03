@@ -2,85 +2,148 @@
 
 /* Estilo geral da página */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  /* Estilo do título do cabeçalho */
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  /* Estilo do subtítulo do cabeçalho */
+  p.lead {
+    font-size: 1.5rem;
+  }
+  
+  /* Estilo dos contêineres */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Estilo das caixas flutuantes */
+  .floating-box {
+    padding: 5px;
+    margin: 20px 0;
+    box-shadow: 10px 10px 20px #888888;
+    background-color: #f8f9fa;
+  }
+  
+  /* Estilo das imagens nas caixas flutuantes */
+  .floating-box img {
+    display: block;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px #888888;
+  }
+  
+  /* Estilo dos títulos das caixas flutuantes */
+  .floating-box h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo dos botões de acordeão */
+  .accordion-button {
+    background: linear-gradient(45deg, #007bff, #1b6ec2);
+    color: #fff;
+    border: 2px solid #007bff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: left;
+  }
+  
+  .accordion-button:hover {
+    background: linear-gradient(45deg, #1b6ec2, #007bff);
+  }
+  
+  /* Estilo do texto do acordeão */
+  .accordion-body {
+    border: 0px solid #007bff;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* Estilos para as caixas "Por que Escolher AutomatizaWeb?" */
+  .accordion-item {
+    margin-bottom: 20px;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    transition: box-shadow 0.3s, background 0.3s, transform 0.3s;
+  }
+  
+  /* Efeito de flutuação sutil */
+  .accordion-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Efeito de degradê de cor ao passar o mouse */
+  .accordion-item:hover button {
+    background: linear-gradient(45deg, #007bff, #1b6ec2);
+  }
+  
+  /* Estilos para o botão do acordeão */
+  .accordion-button {
+    background: #007bff;
+    color: #fff;
+    border: 2px solid #007bff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: left;
+    transition: background 0.3s;
+  }
+  
+  /* Efeito de degradê de cor ao passar o mouse no botão do acordeão */
+  .accordion-button:hover {
+    background: linear-gradient(45deg, #1b6ec2, #007bff);
+  }
+  
+  .floating-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-/* Estilo do cabeçalho */
-header {
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  padding: 50px 0;
+.floating-box p {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    max-width: 80%; /* Define a largura máxima para torná-lo responsivo */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-/* Estilo do título do cabeçalho */
-h1 {
-  font-size: 3rem;
-  margin: 0;
+@media (max-width: 768px) {
+    .floating-box p {
+        font-size: 1.2rem; /* Reduza o tamanho da fonte para telas menores, se necessário */
+    }
 }
 
-/* Estilo do subtítulo do cabeçalho */
-p.lead {
-  font-size: 1.5rem;
+.floating-box:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse sobre o contêiner */
 }
 
-/* Estilo dos contêineres */
-.container {
-  padding: 20px;
+.floating-box.clicked {
+    transform: rotate(10deg); /* Rotaciona o contêiner ao ser clicado */
 }
 
-/* Estilo das caixas flutuantes */
-.floating-box {
-  border: 2px solid #007bff;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 3px 3px 5px #888888;
-  background-color: #f8f9fa;
-}
-
-/* Estilo das imagens nas caixas flutuantes */
-.floating-box img {
-  display: block;
-  margin: 0 auto 20px auto;
-  border-radius: 20px;
-  box-shadow: 3px 3px 5px #888888;
-}
-
-/* Estilo dos títulos das caixas flutuantes */
-.floating-box h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* Estilo dos botões de acordeão */
-.accordion-button {
-  background: linear-gradient(45deg, #007bff, #1b6ec2);
-  color: #fff;
-  border: 2px solid #007bff;
-  font-size: 18px;
-  border-radius: 20px;
-  text-align: left;
-}
-
-.accordion-button:hover {
-  background: linear-gradient(45deg, #1b6ec2, #007bff);
-}
-
-/* Estilo do texto do acordeão */
-.accordion-body {
-  border: 2px solid #007bff;
-  border-radius: 20px;
-  font-size: 18px;
-}
-
-/* Estilo do rodapé */
-footer {
-  background-color: #343a40;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
+  
+  
