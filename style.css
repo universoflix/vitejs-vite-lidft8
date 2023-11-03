@@ -133,7 +133,7 @@ body {
 
 @media (max-width: 768px) {
     .floating-box p {
-        font-size: 1.2rem; /* Reduza o tamanho da fonte para telas menores, se necessário */
+        font-size: 1.0rem; /* Reduza o tamanho da fonte para telas menores, se necessário */
     }
 }
 
