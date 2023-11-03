@@ -152,5 +152,35 @@ body {
   box-shadow: 10px 5px 5px #000000;
 }
 
+@media (max-width: 767px) {
+  .imagem-responsiva {
+      width: 100%; /* Tamanho máximo da imagem em telas pequenas */
+      max-width: 200px; /* Largura máxima da imagem */
+  }
+}
+
+@media (min-width: 768px) {
+  .imagem-responsiva {
+      width: 100%; /* Tamanho máximo da imagem em telas grandes */
+      max-width: 500px; /* Largura máxima da imagem */
+  }
+}
+
+/* Estilo para telas menores (até 767px de largura) */
+@media (max-width: 767px) {
+  #btn-cadastrar {
+      font-size: 16px; /* Tamanho da fonte menor */
+      padding: 10px 20px; /* Espaçamento interno menor */
+  }
+}
+
+/* Estilo para telas maiores (a partir de 768px de largura) */
+@media (min-width: 768px) {
+  #btn-cadastrar {
+      font-size: 24px; /* Tamanho da fonte maior */
+      padding: 20px 40px; /* Espaçamento interno maior */
+  }
+}
+
   
   
