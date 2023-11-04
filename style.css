@@ -122,11 +122,11 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 
 .floating-box p {
-    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 1.8rem; /* Ajuste o tamanho da fonte conforme necessário */
     max-width: 80%; /* Define a largura máxima para torná-lo responsivo */
     margin: 0 auto; /* Centraliza horizontalmente */
 }
